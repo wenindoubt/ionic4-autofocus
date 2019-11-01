@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic 4 AutoFocus
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form [formGroup]="myForm">
+    <ion-label position="floating">Description</ion-label>
+    <ion-textarea
+      #autoFocusTextArea
+      autogrow
+      placeholder="Placeholder text should autofocus and show keyboard"
+      formControlName="description"
+    ></ion-textarea>
+  </form>
+</ion-content>
